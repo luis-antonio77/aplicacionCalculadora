@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación Calculadora</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+    <!--Navegacion-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"> <i>Aplicación Calculadora</i> </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#"><strong>Autor</strong>
+                    <span class="visually-hidden">(current)</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+      <div class='container'>
+        <br>
+        <form id='forma'>
+          <div class='mb-1'>
+            <label for='operandoA'>Operando A</label>
+            <input type="number" class='form-control' style="width: 329px"
+              placeholder="Escribe operando A" id='operandoA'/>
+          </div>
+          <br>
+          <div class='mb-1'>
+            <label for='operandoB'>Operando B</label>
+            <input type="number" class="form-control" style="width: 329px"
+              placeholder="Escribe operando B" id='operandoB'/>
+          </div>
+        </form>
+        <br>
+        <button class='btn btn-primary mb-3' onclick='sumar()'
+        >Sumar</button>
+        <button class='btn btn-success mb-3' onclick='restar()'
+        >Restar</button>
+        <button class='btn btn-danger mb-3' onclick='multiplicar()'
+        >Multiplicar</button>
+        <button class='btn btn-primary mb-3' onclick='dividir()'
+        >Dividir</button>
+        <br><br>
+        <div id='resultado'></div>
+      </div>  
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+      
+    <script src="app.js"></script>  
+</body>
+</html>
