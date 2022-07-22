@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aplicación Calculadora</title>
+    <title>App Calculadora</title>
     <link rel="stylesheet" href="bootstrap.min.css">
 
     <style>
@@ -15,62 +15,62 @@
 </head>
 <body>
     <!--Navegacion-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"> <i>Aplicación Calculadora</i> </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>   
-          <div class="collapse navbar-collapse" id="navbarColor01">
-            <ul class="navbar-nav me-auto">
-              <li class="nav-item">
-                <a class="nav-link active" href="#"><strong>Descripción</strong>
-                    <span class="visually-hidden">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#"><strong>Autor</strong>
-                    <span class="visually-hidden">(current)</span>
-                </a>
-              </li>
-            </ul>
-          </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" >
+      <div class="container">
+        <a class="navbar-brand" href="#"> <strong>App Calculadora</strong> </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>   
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#"><i>Descripción</i>
+                  <span class="visually-hidden">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="https://www.facebook.com/luisantonio.navarrocadena/"><i>Autor</i>
+                  <span class="visually-hidden">(current)</span>
+              </a>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
+
     
-      <div class='container'>
-        <br>
+    
+    <div class='container mt-4 shadow-lg p-3'>
+      <div class="container">
         <form id='forma'>
-          <div class='mb-1'>
-            <label for='operandoA'>Operando A</label>
+          <div class='mb-3'>
+            <label for='operandoA'>Numero A</label>
             <input type="number" class='form-control' style="width: 329px"
-              placeholder="Escribe operando A" id='operandoA' />
+              placeholder="Escribe Numero A" id='operandoA' />
           </div>
-          <br>
-          <div class='mb-1'>
-            <label for='operandoB'>Operando B</label>
+          <div class='mb-3'>
+            <label for='operandoB'>Numero B</label>
             <input type="number" class="form-control" style="width: 329px"
-              placeholder="Escribe operando B" id='operandoB'/>
+              placeholder="Escribe numero B" id='operandoB'/>
           </div>
         </form>
-        <br>
         <button class='btn btn-primary mb-3' onclick='sumar()'
         >Sumar</button>
-        <button class='btn btn-success mb-3' onclick='restar()'
+        <button class='btn btn-primary mb-3' onclick='restar()'
         >Restar</button>
-        <button class='btn btn-danger mb-3' onclick='multiplicar()'
+        <button class='btn btn-primary mb-3' onclick='multiplicar()'
         >Multiplicar</button>
         <button class='btn btn-primary mb-3' onclick='dividir()'
         >Dividir</button>
-        <br><br>
+        <br>
          
         <!--Mostrar Resultado-->
-        <div class="card text-center" style="width: 329px">
-          <div class="card-body">
-            <p id='resultado' class="card-text"></p>
-          </div>
+        <div class="card-body">
+          <p id='resultado' class="card-text"></p>
         </div>
-      </div>  
+        
+      </div>
+    </div>  
       
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="app.js"></script>  
