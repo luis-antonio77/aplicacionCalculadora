@@ -1,10 +1,10 @@
-console.log('Aplicación Calculadora');
+//console.log('Aplicación Calculadora');
 
 function sumar(){
-    const forma = document.getElementById('forma');
-    let operandoA = forma['operandoA'];
-    let operandoB = forma['operandoB'];
-    let resultado = parseInt(operandoA.value) + parseInt(operandoB.value);
+    const formulario = document.getElementById('formulario');
+    let numeroA = formulario['numeroA'];
+    let numeroB = formulario['numeroB'];
+    let resultado = parseFloat(numeroA.value) + parseFloat(numeroB.value);
     if(isNaN(resultado))
         resultado = 'La operación no incluye números';
     document.getElementById('resultado').innerHTML = `Resultado: ${resultado}`;
@@ -12,10 +12,10 @@ function sumar(){
 }
 
 function restar(){
-    const forma = document.getElementById('forma');
-    let operandoA = forma['operandoA'];
-    let operandoB = forma['operandoB'];
-    let resultado = parseInt(operandoA.value) - parseInt(operandoB.value);
+    const formulario = document.getElementById('formulario');
+    let numeroA = formulario['numeroA'];
+    let numeroB = formulario['numeroB'];
+    let resultado = parseFloat(numeroA.value) - parseFloat(numeroB.value);
     if(isNaN(resultado))
         resultado = 'La operación no incluye números';
     document.getElementById('resultado').innerHTML = `Resultado: ${resultado}`;
@@ -23,10 +23,10 @@ function restar(){
 }
 
 function multiplicar(){
-    const forma = document.getElementById('forma');
-    let operandoA = forma['operandoA'];
-    let operandoB = forma['operandoB'];
-    let resultado = parseInt(operandoA.value) * parseInt(operandoB.value);
+    const formulario = document.getElementById('formulario');
+    let numeroA = formulario['numeroA'];
+    let numeroB = formulario['numeroB'];
+    let resultado = parseFloat(numeroA.value) * parseFloat(numeroB.value);
     if(isNaN(resultado))
         resultado = 'La operación no incluye números';
     document.getElementById('resultado').innerHTML = `Resultado: ${resultado}`;
@@ -34,10 +34,10 @@ function multiplicar(){
 }
 
 function dividir(){
-    const forma = document.getElementById('forma');
-    let operandoA = forma['operandoA'];
-    let operandoB = forma['operandoB'];
-    let resultado = parseInt(operandoA.value) / parseInt(operandoB.value);
+    const formulario = document.getElementById('formulario');
+    let numeroA = formulario['numeroA'];
+    let numeroB = formulario['numeroB'];
+    let resultado = parseFloat(numeroA.value) / parseFloat(numeroB.value);
     if(isNaN(resultado))
         resultado = 'La operación no incluye números';
     document.getElementById('resultado').innerHTML = `Resultado: ${resultado}`;
